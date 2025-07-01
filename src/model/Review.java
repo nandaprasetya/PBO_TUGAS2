@@ -6,10 +6,8 @@ public class Review {
     private String title;
     private String content;
 
-    // Constructor kosong (untuk deserialisasi JSON)
     public Review() {}
 
-    // Constructor lengkap
     public Review(int booking, int star, String title, String content) {
         this.booking = booking;
         this.star = star;
@@ -17,7 +15,6 @@ public class Review {
         this.content = content;
     }
 
-    // Getter dan Setter
     public int getBooking() {
         return booking;
     }
@@ -50,7 +47,6 @@ public class Review {
         this.content = content;
     }
 
-    // Optional: toString()
     @Override
     public String toString() {
         return "Review{" +

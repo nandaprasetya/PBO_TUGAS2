@@ -6,10 +6,8 @@ public class Customer {
     private String email;
     private String phone;
 
-    // Constructor kosong (untuk deserialisasi JSON)
     public Customer() {}
 
-    // Constructor lengkap
     public Customer(int id, String name, String email, String phone) {
         this.id = id;
         this.name = name;
@@ -17,7 +15,6 @@ public class Customer {
         this.phone = phone;
     }
 
-    // Getter dan Setter
     public int getId() {
         return id;
     }
@@ -50,7 +47,6 @@ public class Customer {
         this.phone = phone;
     }
 
-    // Optional: toString()
     @Override
     public String toString() {
         return "Customer{" +

@@ -15,11 +15,9 @@ public class Booking {
     private boolean hasCheckedin;
     private boolean hasCheckedout;
 
-    // Constructor kosong (penting untuk JSON deserialization)
     public Booking() {
     }
 
-    // Constructor lengkap
     public Booking(int id, int customer, int roomType, LocalDateTime checkinDate, LocalDateTime checkoutDate,
                    int price, Integer voucher, int finalPrice, String paymentStatus,
                    boolean hasCheckedin, boolean hasCheckedout) {
@@ -36,7 +34,6 @@ public class Booking {
         this.hasCheckedout = hasCheckedout;
     }
 
-    // Getter & Setter
     public int getId() {
         return id;
     }
@@ -125,7 +122,6 @@ public class Booking {
         this.hasCheckedout = hasCheckedout;
     }
 
-    // Optional: toString()
     @Override
     public String toString() {
         return "Booking{" +

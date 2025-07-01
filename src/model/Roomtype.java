@@ -140,7 +140,6 @@ public class Roomtype {
         }
     }
 
-    // Getters dan Setters
     public int getId() {
         return id;
     }
