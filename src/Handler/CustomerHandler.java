@@ -30,7 +30,6 @@ public class CustomerHandler {
     public static boolean handle(HttpExchange httpExchange, String method, String path, Map<String, Object> reqJson, Response res) {
         ObjectMapper objectMapper = new ObjectMapper();
 
-        // Normalize
         path = path.split("\\?")[0];
         path = path.replaceAll("/$", "");
 
@@ -74,7 +73,6 @@ public class CustomerHandler {
                 try {
                     List<Booking> bookings = CustomerService.getCustomerBookings(customerId);
 
-                    // Kita ubah Booking ke Map manual biar tanggal aman (tanpa LocalDateTime)
                     List<Map<String, Object>> simpleBookings = new ArrayList<>();
 
                     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");

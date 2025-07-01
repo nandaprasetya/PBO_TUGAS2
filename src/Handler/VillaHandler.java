@@ -28,7 +28,6 @@ public class VillaHandler {
         objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
 
         try {
-            // GET /villas
             if (method.equals("GET") && path.equals("/villas")) {
                 String query = httpExchange.getRequestURI().getQuery();
 
@@ -95,7 +94,6 @@ public class VillaHandler {
                 return true;
             }
 
-            // POST /villas
             if (method.equals("POST") && path.equals("/villas")) {
                 if (reqJson != null) {
                     try {
@@ -131,7 +129,6 @@ public class VillaHandler {
                 }
             }
 
-            // PUT /villas (ambil id dari body JSON)
             if (method.equals("PUT") && path.matches("/villas/\\d+")) {
                 if (reqJson != null) {
                     try {
@@ -226,7 +223,6 @@ public class VillaHandler {
                 }
             }
 
-            // DELETE /villas/{id}
             if (method.equals("DELETE") && path.matches("/villas/\\d+")) {
                 int villaId = Integer.parseInt(path.split("/")[2]);
 
@@ -436,6 +432,6 @@ public class VillaHandler {
             e.printStackTrace();
         }
 
-        return false; // Jika tidak cocok dengan path-method villa
+        return false;
     }
 }
