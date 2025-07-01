@@ -17,7 +17,6 @@ public class ApiResponse<T> {
 
     public ApiResponse() {}
 
-    // Success response dengan data
     public static <T> ApiResponse<T> success(String message, T data) {
         ApiResponse<T> response = new ApiResponse<>();
         response.success = true;
