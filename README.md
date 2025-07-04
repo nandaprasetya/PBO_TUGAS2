@@ -569,8 +569,9 @@ API menggunakan SQLite database dengan entitas:
 - `404 Not Found`: Resource tidak ditemukan
 - `500 Internal Server Error`: Error server
 
+## 🏫 Informasi Akademik
 
-**Mata Kuliah**: Pemrograman Berorientasi Objek  
-**Dosen**: Wayan Oger Vihikan, S.T.I, M.I.T.  
-**Semester**: 2  
-**Tahun**: 2025
+- **Mata Kuliah**: Pemrograman Berorientasi Objek (PBO)  
+- **Dosen Pengampu**: Wayan Oger Vihikan, S.T.I, M.I.T.  
+- **Semester**: Genap (Semester 2)  
+- **Tahun Ajaran**: 2025
